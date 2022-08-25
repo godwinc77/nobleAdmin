@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/admin.css">
+        <link rel="shortcut icon" href="img/b1.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/0cd43d1304.js" crossorigin="anonymous"></script>
+        <title>Noblegrapix admin</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Ibarra+Real+Nova&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+    <body>
+        <div class="logo">
+            <h2>NOBLE</h2>
+            <img src="./img/b1.png" alt="">
+            <h2 id="logot-text">GRAPIX</h2>
+        </div>
+        <div class="admin-body">
+            <nav>
+                <div class="nav-info dashboard-click">
+                    <h3>DASHBOARD</h3>
+                </div>
+                <div class="nav-info background-image-click">
+                    <h3>BACKGROUND IMAGE UPLOAD</h3>
+                </div>
+                <div class="nav-info gallery-image-click">
+                    <h3>GALLERY IMAGE UPLOAD</h3>
+                </div>
+                <div class="nav-info portfolio-image-click">
+                    <h3>PORTFOLIO IMAGE UPLOAD</h3>
+                </div>
+                <div class="nav-info booking-info-click">
+                    <h3>BOOKING DETAILS</h3>
+                </div>
+                <div class="nav-info log-out-click">
+                    <h3>LOG OUT</h3>
+                </div> 
+            </nav>
+            <div class="admin-detail">
+                <div class="admin-dashboard">
+                    <div class="admin-dashboard-head">
+                        <h3>WELCOME ADMIN</h3>
+                    </div>
+                    <div class="dashboard-info">
+                        <h3>RECENT ACTIVITIES</h3>
+                    </div>
+                </div>
+                <div class="background-image" style="display: none;">
+                    <ul class="background-image-list">
+                        <li id="home-bg-button">HOME BG </li>
+                        <li id="gallery-bg-button">GALLERY BG</li>
+                        <li id="rate-bg-button">RATE BG</li>
+                        <li id="portfolio-bg-button">PORTFOLIO BG</li>
+                        <li id="service-bg-button">SERVICES BG</li>
+                        <li id="about-bg-button">ABOUT BG </li>
+                    </ul>
+
+                    <div class="home-upload" style="display: none;">
+                        <div class="bg-head">
+                            <h3>HOME BG</h3>
+                        </div>
+                        <div class="home-upload-info">
+                            <div class="home-bg-img">
+                                <h4>1</h4>
+                                <img src="./img/back11.png" alt="">
+                            </div>
+                            <div class="home-bg-img ">
+                                <h4>2</h4>
+                                <img src="./img/back12.png" alt="">
+                            </div>
+                            <div class="home-bg-img ">
+                                <h4>3</h4>
+                                <img src="./img/back13.png" alt="">
+                            </div>
+                            <div class="home-bg-img">
+                                <h4>4</h4>
+                                <img src="./img/back14.png" alt="">
+                            </div>
+                            <div class="home-bg-img">
+                                <h4>5</h4>
+                                <img src="./img/back15.png" alt="">
+                            </div>
+                            <div class="home-bg-img">
+                                <h4>6</h4>
+                                <img src="./img/back16.png" alt="">
+                            </div>
+                        </div>
+                        <div class="upload-button">
+                            <h3>CHANGE IMAGES</h3>
+                        </div>
+                        <div class="home-upload-detail" style="display: none;">
+                            <div class="home-upload-list">
+                                <div class="home-upload-item home-bg-1">
+                                    <h3>HOME BG 1</h3>
+                                </div>
+                                <div class="home-upload-item home-bg-2">
+                                    <h3>HOME BG 2</h3>
+                                </div>
+                                <div class="home-upload-item home-bg-3">
+                                    <h3>HOME BG 3</h3>
+                                </div>
+                                <div class="home-upload-item  home-bg-4">
+                                    <h3>HOME BG 4</h3>
+                                </div>
+                                <div class="home-upload-item  home-bg-5">
+                                    <h3>HOME BG 5</h3>
+                                </div>
+                                <div class="home-upload-item home-bg-6">
+                                    <h3>HOME BG 6</h3>
+                                </div>
+                            </div>
+                            <div class="home-file-upload">
+                                <span class="cancel-upload">x</span>
+                                <div class="modal-bg">
+                                    <div class="modal">
+                                        <form action="" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="avatar">
+                                            <input class="upload" type="submit" value="Upload"> 
+                                        </form>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="file-upload" style="display: none;">
+                        <span class="cancel-upload">x</span>
+                        <div class="modal-bg">
+                            <div class="modal">
+                                <form action="" method="post" enctype="multipart/form-data">
+                                    <input type="file" name="avatar">
+                                    <input class="upload" type="submit" value="Upload"> 
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="gallery-bg" style="display: none;">
+                        <div class="bg-detail">
+                            <div class="bg-head">
+                                <h3>GALLERY BG</h3>
+                            </div>
+                            <div class="bg-info">
+                                <img src="./img/bg2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="upload-button">
+                            <h3>CHANGE IMAGE</h3>
+                        </div>
+                    </div>
+                    <div class="bg-upload rates-bg" style="display: none;">
+                        <div class="bg-detail">
+                            <div class="bg-head">
+                                <h3>RATES BG</h3>
+                            </div>
+                            <div class="bg-info">
+                                <img src="./img/bg3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="upload-button">
+                            <h3>CHANGE IMAGE</h3>
+                        </div>
+
+                    </div>
+                    <div class="bg-upload portfolio-bg" style="display: none;">
+                        <div class="bg-detail">
+                            <div class="bg-head">
+                                <h3>PORTFOLIO BG</h3>
+                            </div>
+                            <div class="bg-info">
+                                <img src="./img/bg5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="upload-button">
+                            <h3>CHANGE IMAGE</h3>
+                        </div>
+
+                    </div>
+                    <div class="bg-upload service-bg"  style="display: none;">
+                        <div class="bg-detail">
+                            <div class="bg-head">
+                                <h3>SERVICE BG</h3>
+                            </div>
+                            <div class="bg-info">
+                                <img src="./img/bg6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="upload-button">
+                            <h3>CHANGE IMAGE</h3>
+                        </div>
+                    
+
+                    </div>
+                    <div class="bg-upload about-bg" style="display: none;">
+                        <div class="bg-detail">
+                            <div class="bg-head">
+                                <h3>ABOUT BG</h3>
+                            </div>
+                            <div class="bg-info">
+                                <img src="./img/bg8.png" alt="">
+                            </div>
+                        </div>
+                        <div class="upload-button">
+                            <h3>CHANGE IMAGE</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="gallery-image-info" style="display: none;">
+                    <div class="gallery-upload" style="display: none;">
+                        <span class="gallery-cancel">x</span>
+                        <div class="modal-bg">
+                            <div class="modal">
+                                <form action="" method="post" enctype="multipart/form-data">
+                                    <input type="file" name="avatar">
+                                    <input class="upload" type="submit" value="Upload"> 
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="gallery-image-text">
+                        <h3 id="photography">NOBLE'S PHOTOS</h3>
+                        <h3 id="make-up">JUST KLASSIC MAKE UP</h3>
+                    </div>
+                    <div class="gallery-image">
+                        <div class="noble" style="display: none;">
+                            <div class="gallery-image-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="noble-images">
+                                <img src="./img/bac7.jpg" alt="">
+                                <img src="./img/bg1.jpg" alt="">
+                                <img src="./img/ra2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="justklassic" style="display: none;">
+                            <div class="gallery-image-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="noble-images">
+                                <img src="./img/bg1.jpg" alt="">
+                                <img src="./img/bac7.jpg" alt="">
+                                <img src="./img/ra2.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="portfolio-image-info" style="display: none;">
+                    <div class="portfolio-image-text">
+                        <h3 id="indoor-text">INDOOR </h3>
+                        <h3 id="outdoor-text">OUTDOOR </h3>
+                        <h3 id="portrait-text">PORTRAITS</h3>
+                        <h3 id="fashion-text">FASHION </h3>
+                        <h3 id="product-text">PRODUCT</h3>
+                        <h3 id="makeup-text">MAKE-UP</h3>
+                    </div>
+                    <div class="portfolio-upload" style="display: none;">
+                        <span class="portfolio-cancel">x</span>
+                        <div class="modal-bg">
+                            <div class="modal">
+                                <form action="" method="post" enctype="multipart/form-data">
+                                    <input type="file" name="avatar">
+                                    <input class="upload" type="submit" value="Upload"> 
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="portfolio-image">
+                        
+                        <div class="indoor portfolio-img" style="display: none;">
+                            <div class="portfolio-image-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="portfolio-image-list">
+                                <img src="./img/bac7.jpg" alt="">
+                                <img src="./img/bg1.jpg" alt="">
+                                <img src="./img/ra2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="outdoor portfolio-img" style="display: none;">
+                            <div class="portfolio-image-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="portfolio-image-list">
+                                <img src="./img/bg1.jpg" alt="">
+                                <img src="./img/ra2.jpg" alt="">
+                                <img src="./img/bac7.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="portraits portfolio-img" style="display: none;">
+                            <div class="portfolio-image-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="portfolio-image-list">
+                                <img src="./img/bac7.jpg" alt="">
+                                <img src="./img/ra2.jpg" alt="">
+                                <img src="./img/bg1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="fashion portfolio-img" style="display: none;">
+                            <div class="portfolio-image-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="portfolio-image-list">
+                                <img src="./img/ra2.jpg" alt="">
+                                <img src="./img/bg1.jpg" alt="">
+                                <img src="./img/bac7.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="product portfolio-img" style="display: none;">
+                            <div class="portfolio-image-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="portfolio-image-list">
+                                <img src="./img/bg1.jpg" alt="">
+                                <img src="./img/ra2.jpg" alt="">
+                                <img src="./img/bac7.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="make-up portfolio-img" style="display: none;">
+                            <div class="portfolio-image-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="portfolio-image-list">
+                                <img src="./img/bac7.jpg" alt="">
+                                <img src="./img/bg1.jpg" alt="">
+                                <img src="./img/ra2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+
+        <script src="js/adminn.js"></script> 
+    </body>
+</html>
